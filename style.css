@@ -1,0 +1,234 @@
+/* ========================================== */
+/* PENGATURAN UMUM */
+/* ========================================== */
+
+/* Mengatur font dan jarak antar elemen */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Mengatur jarak bagian agar tidak terlalu mepet */
+.bagian {
+    padding: 50px 0;
+}
+
+/* Latar belakang abu-abu muda untuk variasi antar bagian */
+.latar-abu {
+    background-color: #f4f4f4;
+}
+
+/* Mengatur semua judul agar berwarna biru tua */
+h1, h2, h3, h4 {
+    color: #003366;
+    margin-bottom: 15px;
+}
+
+/* ========================================== */
+/* WARNA NAVBAR */
+/* ========================================== */
+
+/* Warna latar belakang navbar (biru tua) */
+.warna-navbar {
+    background-color: #003366;
+}
+
+/* Warna teks nama sekolah di navbar */
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* ========================================== */
+/* HERO SECTION (BANNER UTAMA) */
+/* ========================================== */
+
+.hero {
+    /* Menggunakan gambar latar dari internet */
+    background-image: linear-gradient(rgba(0, 51, 102, 0.7), rgba(0, 51, 102, 0.7)), url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1500&q=80');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.hero h1 {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
+/* ========================================== */
+/* GAMBAR PROFIL */
+/* ========================================== */
+
+.gambar-profil {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* ========================================== */
+/* KARTU (CARD) */
+/* ========================================== */
+
+/* Kotak putih untuk kartu informasi */
+.kartu {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    height: 100%; /* Agar semua kartu sama tinggi */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Efek bayangan halus */
+}
+
+/* Gambar di dalam berita */
+.gambar-berita {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Tanggal berita */
+.tanggal {
+    color: #777;
+    font-size: 0.85rem;
+}
+
+/* Tautan "Baca Selengkapnya" */
+.tautan {
+    color: #003366;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.tautan:hover {
+    text-decoration: underline;
+}
+
+/* ========================================== */
+/* GALERI FOTO */
+/* ========================================== */
+
+.gambar-galeri {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s; /* Efek animasi saat disentuh */
+}
+
+/* Efek zoom saat gambar galeri disentuh mouse */
+.gambar-galeri:hover {
+    transform: scale(1.03);
+}
+
+/* ========================================== */
+/* FOOTER */
+/* ========================================== */
+
+.footer {
+    background-color: #003366;
+    color: white;
+    padding: 40px 0 20px 0;
+}
+
+.footer h4 {
+    color: #ffc107; /* Warna kuning untuk judul footer */
+}
+
+.footer p {
+    margin-bottom: 5px;
+}
+
+/* Tautan media sosial di footer */
+.sosmed {
+    color: white;
+    text-decoration: none;
+}
+
+.sosmed:hover {
+    color: #ffc107;
+    text-decoration: underline;
+}
+
+/* Garis pemisah di footer */
+.footer hr {
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* ========================================== */
+/* KARTU GURU & STAF */
+/* ========================================== */
+
+.kartu-guru {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    height: 100%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+/* Efek saat kartu guru disentuh mouse */
+.kartu-guru:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Foto guru dibuat bulat */
+.foto-guru {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%; /* Membuat foto menjadi bulat */
+    margin-bottom: 10px;
+    border: 3px solid #003366; /* Bingkai biru tua */
+}
+
+/* Nama guru */
+.kartu-guru h4 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #003366;
+}
+
+/* Jabatan guru */
+.jabatan {
+    font-size: 0.85rem;
+    color: #777;
+    margin: 0;
+}
+
+/* ========================================== */
+/* RESPONSIF UNTUK HP */
+/* ========================================== */
+
+/* Jika layar lebih kecil dari 768px (Tablet/HP) */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+    
+    .hero {
+        padding: 80px 15px;
+    }
+}

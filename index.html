@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <!-- Menentukan karakter teks agar mendukung bahasa Indonesia -->
+    <meta charset="UTF-8">
+
+    <!-- Agar ukuran website menyesuaikan layar HP dan laptop -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Judul yang tampil pada tab browser -->
+    <title>SMA Keraton Jati Sejowo</title>
+
+    <!-- Mengambil Bootstrap 5 dari internet -->
+    <!-- Bootstrap membantu membuat tampilan website responsif -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- Menghubungkan HTML dengan file CSS milik kita -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ========================================== -->
+    <!-- 1. HEADER DAN MENU NAVIGASI -->
+    <!-- ========================================== -->
+
+    <header>
+
+        <!-- Navbar adalah menu yang berada di bagian atas website -->
+        <nav class="navbar navbar-expand-lg navbar-dark warna-navbar">
+
+            <div class="container">
+
+                <!-- Nama sekolah berfungsi sebagai identitas website -->
+                <a class="navbar-brand" href="#home">
+                    SMA Keraton Jati Sejowo
+                </a>
+
+                <!-- Tombol hamburger untuk membuka menu di HP -->
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menu"
+                    aria-controls="menu"
+                    aria-expanded="false"
+                    aria-label="Buka menu"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Daftar menu navigasi -->
+                <div class="collapse navbar-collapse" id="menu">
+
+                    <ul class="navbar-nav ms-auto">
+
+                        <!-- Setiap href mengarah ke bagian dengan id yang sama -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#profil">Profil</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#akademik">Akademik</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#berita">Berita</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#galeri">Galeri</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#kontak">Kontak</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ========================================== -->
+    <!-- 2. HERO SECTION / BANNER UTAMA -->
+    <!-- ========================================== -->
+
+    <!-- Bagian pertama yang dilihat pengunjung -->
+    <section id="home" class="hero">
+
+        <div class="container">
+
+            <h1>SMA Keraton Jati Sejowo</h1>
+
+            <p>
+                Unggul dalam Prestasi, Berakhlak Mulia,
+                Berwawasan Global
+            </p>
+
+            <!-- Tombol ini membawa pengunjung ke bagian profil -->
+            <a href="#profil" class="btn btn-warning">
+                Selengkapnya
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ========================================== -->
+    <!-- 3. PROFIL SEKOLAH -->
+    <!-- ========================================== -->
+
+    <section id="profil" class="bagian">
+
+        <div class="container">
+
+            <h2>Profil Sekolah</h2>
+
+            <!-- Gambar sekolah dari internet -->
+            <!-- Ganti alamat src dengan gambar milikmu jika diperlukan -->
+            <img
+                src="images/gedungsekolah.jpeg"
+                alt="Ilustrasi gedung sekolah"
+                class="gambar-profil"
+            >
+
+            <!-- Deskripsi singkat sekolah -->
+            <p>
+                SMA Keraton Jati Sejowo merupakan sekolah menengah atas
+                yang berkomitmen untuk menciptakan peserta didik yang
+                berprestasi, berkarakter, kreatif, dan bertanggung jawab.
+                Sekolah mendukung perkembangan akademik serta bakat
+                siswa agar siap menghadapi tantangan masa depan.
+            </p>
+
+            <!-- Visi sekolah -->
+            <h3>Visi</h3>
+
+            <p>
+                Menjadi sekolah unggul yang menghasilkan generasi
+                berprestasi, berakhlak mulia, mandiri, dan berwawasan global.
+            </p>
+
+            <!-- Misi sekolah -->
+            <h3>Misi</h3>
+
+            <ul>
+                <li>Menyelenggarakan pembelajaran yang berkualitas.</li>
+
+                <li>Menanamkan nilai kejujuran dan kedisiplinan.</li>
+
+                <li>Mengembangkan bakat dan kreativitas siswa.</li>
+
+                <li>Meningkatkan penguasaan teknologi dan pengetahuan.</li>
+            </ul>
+
+        </div>
+
+    </section>
+
+
+    <!-- ========================================== -->
+    <!-- 4. INFORMASI AKADEMIK -->
+    <!-- ========================================== -->
+
+    <section id="akademik" class="bagian latar-abu">
+
+        <div class="container">
+
+            <h2>Informasi Akademik</h2>
+
+            <!--
+                row digunakan untuk membuat baris.
+                col-md-4 berarti setiap kartu memakai sepertiga
+                lebar baris pada layar berukuran sedang ke atas.
+            -->
+            <div class="row g-3">
+
+                <!-- Kartu pertama -->
+                <div class="col-md-4">
+
+                    <div class="kartu">
+
+                        <h3>Kurikulum</h3>
+
+                        <p>
+                            Pembelajaran dirancang untuk meningkatkan
+                            pengetahuan, keterampilan, dan kreativitas siswa.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- Kartu kedua -->
+                <div class="col-md-4">
+
+                    <div class="kartu">
+
+                        <h3>Ekstrakurikuler</h3>
+
+                        <p>
+                            Siswa dapat mengembangkan minat dan bakat
+                            melalui berbagai kegiatan di luar jam pelajaran.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- Kartu ketiga -->
+                <div class="col-md-4">
+
+                    <div class="kartu">
+
+                        <h3>Prestasi</h3>
+
+                        <p>
+                            Sekolah mendukung siswa untuk meraih prestasi
+                            akademik maupun non-akademik di berbagai tingkat.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ========================================== -->
+    <!-- 5. BERITA TERBARU -->
+    <!-- ========================================== -->
+
+    <section id="berita" class="bagian">
+
+        <div class="container">
+
+            <h2>Berita Terbaru</h2>
+
+            <div class="row g-3">
+
+                <!-- Berita 1 -->
+                <div class="col-md-4">
+                    <div class="kartu">
+                        <img src="images/gedungsekolah.jpeg" alt="Foto kegiatan belajar" class="gambar-berita">
+                        <h4>Penerimaan Siswa Baru 2026</h4>
+                        <small class="tanggal">12 Januari 2026</small>
+                        <p>Pendaftaran siswa baru untuk tahun ajaran 2026/2027 telah dibuka. Silakan hubungi kontak sekolah untuk informasi lebih lanjut.</p>
+                        <a href="#" class="tautan">Baca Selengkapnya</a>
+                    </div>
+                </div>
+
+                <!-- Berita 2 -->
+                <div class="col-md-4">
+                    <div class="kartu">
+                        <img src="images/olimpiade.jpg" alt="Foto gedung sekolah" class="gambar-berita">
+                        <h4>Juara Umum Lomba Sains</h4>
+                        <small class="tanggal">10 Januari 2026</small>
+                        <p>Siswa SMA Keraton Jati Sejowo berhasil meraih juara umum dalam kompetisi sains tingkat provinsi.</p>
+                        <a href="#" class="tautan">Baca Selengkapnya</a>
+                    </div>
+                </div>
+
+                <!-- Berita 3 -->
+                <div class="col-md-4">
+                    <div class="kartu">
+                        <img src="images/workshop.png" alt="Foto kegiatan kelas" class="gambar-berita">
+                        <h4>Workshop Teknologi Pembelajaran</h4>
+                        <small class="tanggal">05 Januari 2026</small>
+                        <p>Guru-guru mengikuti workshop pemanfaatan teknologi untuk meningkatkan kualitas pembelajaran di kelas.</p>
+                        <a href="#" class="tautan">Baca Selengkapnya</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================== -->
+<!-- 6. GURU & STAF (SECTION BARU) -->
+<!-- ========================================== -->
+
+<section id="guru" class="bagian latar-abu">
+
+    <div class="container">
+
+        <h2>Guru & Staf</h2>
+
+        <!--
+            Grid untuk menampilkan kartu guru.
+            col-md-3 = 4 kolom di desktop.
+            col-6 = 2 kolom di HP.
+        -->
+        <div class="row g-3">
+
+            <!-- Kartu Guru 1 -->
+            <div class="col-md-3 col-6">
+                <div class="kartu-guru">
+                    <!-- Ganti src dengan foto asli jika ada -->
+                    <img src="images/kepalasekolah.jpg" alt="Foto Kepala Sekolah" class="foto-guru">
+                    <h4>Drs. Ahmad Santoso, M.Pd.</h4>
+                    <p class="jabatan">Kepala Sekolah</p>
+                </div>
+            </div>
+
+            <!-- Kartu Guru 2 -->
+            <div class="col-md-3 col-6">
+                <div class="kartu-guru">
+                    <img src="images/wakilkepalasekolah.jpg" alt="Foto Wakil Kepala Sekolah" class="foto-guru">
+                    <h4>Siti Aminah, S.Pd.</h4>
+                    <p class="jabatan">Wakil Kepala Sekolah</p>
+                </div>
+            </div>
+
+            <!-- Kartu Guru 3 -->
+            <div class="col-md-3 col-6">
+                <div class="kartu-guru">
+                    <img src="images/matematika.jpg" alt="Foto Guru Matematika" class="foto-guru">
+                    <h4>Diani Raharja, S.Pd.</h4>
+                    <p class="jabatan">Guru Matematika</p>
+                </div>
+            </div>
+
+            <!-- Kartu Guru 4 -->
+            <div class="col-md-3 col-6">
+                <div class="kartu-guru">
+                    <img src="images/bahasaindonesia.jpg" alt="Foto Guru Bahasa Indonesia" class="foto-guru">
+                    <h4>Dewi Lestari, S.Pd.</h4>
+                    <p class="jabatan">Guru Bahasa Indonesia</p>
+                </div>
+            </div>
+
+            <!-- Kartu Guru 5 -->
+            <div class="col-md-3 col-6">
+                <div class="kartu-guru">
+                    <img src="images/ipa.jpg" alt="Foto Guru IPA" class="foto-guru">
+                    <h4>Rahayu putri, S.Si.</h4>
+                    <p class="jabatan">Guru IPA</p>
+                </div>
+            </div>
+
+            <!-- Kartu Guru 6 -->
+            <div class="col-md-3 col-6">
+                <div class="kartu-guru">
+                    <img src="images/ips.jpg" alt="Foto Guru IPS" class="foto-guru">
+                    <h4>Rina Marlina, S.Pd.</h4>
+                    <p class="jabatan">Guru IPS</p>
+                </div>
+            </div>
+
+            <!-- Kartu Staf 1 -->
+            <div class="col-md-3 col-6">
+                <div class="kartu-guru">
+                    <img src="images/tatausaha.jpg" alt="Foto Staf Tata Usaha" class="foto-guru">
+                    <h4>Hendra Gunawan</h4>
+                    <p class="jabatan">Staf Tata Usaha</p>
+                </div>
+            </div>
+
+            <!-- Kartu Staf 2 -->
+            <div class="col-md-3 col-6">
+                <div class="kartu-guru">
+                    <img src="images/perpustakaan.jpg" "Foto Staf Perpustakaan" class="foto-guru">
+                    <h4>haikal kamana</h4>
+                    <p class="jabatan">Staf Perpustakaan</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+    <!-- ========================================== -->
+    <!-- 7. GALERI FOTO -->
+    <!-- ========================================== -->
+
+    <section id="galeri" class="bagian latar-abu">
+
+        <div class="container">
+
+            <h2>Galeri</h2>
+
+            <!-- Grid galeri: 3 kolom di desktop, 2 di tablet, 1 di HP -->
+            <div class="row g-3">
+
+                <div class="col-md-4 col-6">
+                    <img src="images/pramuka.jpg" alt="Kegiatan Pramuka" class="gambar-galeri">
+                </div>
+
+                <div class="col-md-4 col-6">
+                    <img src="images/kegiatanbelajar.jpg" alt="Kegiatan Belajar" class="gambar-galeri">
+                </div>
+
+                <div class="col-md-4 col-6">
+                    <img src="images/olahraga.jpg" alt="Kegiatan Olahraga" class="gambar-galeri">
+                </div>
+
+                <div class="col-md-4 col-6">
+                    <img src="images/seni.jpg" alt="Kegiatan Seni" class="gambar-galeri">
+                </div>
+
+                <div class="col-md-4 col-6">
+                    <img src="images/upacara.jpg" alt="Kegiatan Upacara" class="gambar-galeri">
+                </div>
+
+                <div class="col-md-4 col-6">
+                    <img src="images/diskusi.jpg" alt="Kegiatan Diskusi" class="gambar-galeri">
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ========================================== -->
+    <!-- 8. FOOTER / KONTAK -->
+    <!-- ========================================== -->
+
+    <footer id="kontak" class="footer">
+
+        <div class="container">
+
+            <div class="row">
+
+                <!-- Kolom Alamat -->
+                <div class="col-md-4">
+                    <h4>Alamat</h4>
+                    <p>Jl. Keraton Jati No. 123, Sejowo, Indonesia</p>
+                </div>
+
+                <!-- Kolom Kontak -->
+                <div class="col-md-4">
+                    <h4>Kontak</h4>
+                    <p>Telepon: (021) 1234567</p>
+                    <p>Email: info@smakeratonjatisejowo.sch.id</p>
+                </div>
+
+                <!-- Kolom Media Sosial -->
+                <div class="col-md-4">
+                    <h4>Media Sosial</h4>
+                    <!-- Ikon diambil dari Bootstrap Icons (menggunakan huruf sebagai placeholder sederhana) -->
+                    <a href="#" class="sosmed">Facebook</a> |
+                    <a href="#" class="sosmed">Instagram</a> |
+                    <a href="#" class="sosmed">YouTube</a>
+                </div>
+
+            </div>
+
+            <hr>
+
+            <!-- Teks Hak Cipta -->
+            <p class="text-center">
+                &copy; 2026 SMA Keraton Jati Sejowo. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Memanggil JavaScript Bootstrap agar menu hamburger berfungsi -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
